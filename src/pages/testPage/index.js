@@ -55,6 +55,7 @@ const TestPage = (props) => {
   return (
     <Row>
       <Col ms={24} md={8} lg={8}>
+        {console.log(num, shoppingStore)}
         <FormItem {...formItemLayout} label="没经过后台的">
           <span>{num}</span>
         </FormItem>
@@ -73,7 +74,8 @@ const TestPage = (props) => {
         </span>
 
       </Col>
-    </Row>);
+    </Row>
+  );
 };
 
 function mapStateToProps(state) {

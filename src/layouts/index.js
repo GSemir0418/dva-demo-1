@@ -29,7 +29,8 @@ function BasicLayout(props) {
                   <span>
                     <Icon type="smile" />
                     <span>数据传递</span>
-                  </span>)}
+                  </span>
+                )}
               >
                 <Menu.Item key="testPage">
                   <Link to="testPage">
@@ -43,6 +44,18 @@ function BasicLayout(props) {
                     <span>学习数据流</span>
                   </Link>
                 </Menu.Item>
+                <Menu.Item key="gsqPage">
+                  <Link to="gsqPage">
+                    <Icon type="user" />
+                    <span>gsq测试</span>
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="userPage">
+                  <Link to="userPage">
+                    <Icon type="user" />
+                    <span>用户管理</span>
+                  </Link>
+                </Menu.Item>
               </Menu.SubMenu>
               <Menu.Item key="/">
                 <Link to="/">
@@ -53,7 +66,7 @@ function BasicLayout(props) {
             </Menu>
           </Sider>
           <Content style={{ padding: 24, background: '#fff' }}>
-            { children }
+            {children}
           </Content>
         </Layout>
       </Layout>
